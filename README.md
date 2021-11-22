@@ -28,8 +28,8 @@
    * use "/api/user/events"
    * Returns list of active events and upcomming events
    * Say today's date is currDate, active date of event is activeDate and close date of event is closeDate
-    * Active Events: if (currDate < closeDate)
-    * Upcomming Events: if (currDate < activeDate)
+     * Active Events: if (currDate < closeDate)
+     * Upcomming Events: if (currDate < activeDate)
  
 * Participate in an event
    * use '/api/user/participate"
@@ -37,7 +37,7 @@
     * Email of that user: 'email' : "pheobe@gjak.com"
     * ID of event in which user want to participate: 'eventId : id'
    * Takes one parameter in header
-    * 'auto-token' : JWT token
+     * 'auto-token' : JWT token
    * Steps
      * First checks if user have availabe tickets to participate in that event
      * Now, it checks whether that event is active or not
