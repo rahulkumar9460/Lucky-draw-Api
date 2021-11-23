@@ -1,14 +1,14 @@
 # Lucky Draw APIs
 # Hosted at: https://luckydrawapi.herokuapp.com/
 * SignUp
-  * use "/api/user/signup
+  * use "/api/user/signup"
   * Require 3 parameters in body
     * 'name' : "pheobe",
     * 'email' : "pheobe@gjak.com",
     * 'password' : "pheobe@9460" 
 
 * Login
-  * use "/api/user/login
+  * use "/api/user/login"
   * Require 2 parameters in body
      * 'email' : "pheobe@gjak.com",
      * 'password' : "pheobe@9460"
@@ -19,7 +19,7 @@
   * Require 2 parameter in body
      * 'email' : "pheobe@gjak.com"
      * 'boughtTickets' : 4     //Number of tickets bought by the  user
-  * Require 1 paramete in header
+  * Require 1 parameter in header
      * 'auth-token' : JWT token // to check whether user is logged in or not
   * Updates user's total tickets (previous tickets + newly bought tickets) at the database
   * Return user's total number to tickets
