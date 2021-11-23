@@ -10,14 +10,14 @@
 * @happi/joi: 15.0.3
 
 # 
-* SignUp
+* SignUp (POST request)
   * use "/api/user/signup"
   * Require 3 parameters in body
     * 'name' : "pheobe",
     * 'email' : "pheobe@gjak.com",
     * 'password' : "pheobe@9460" 
 # 
-* Login
+* Login (POST request)
   * use "/api/user/login"
   * Require 2 parameters in body
      * 'email' : "pheobe@gjak.com",
@@ -25,7 +25,7 @@
   * Returns JWT token(named as "auth-token")
   
 # 
-* Buy event tickets
+* Buy event tickets (POST request)
   * use "/api/user/buyTickets
   * Require 2 parameter in body
      * 'email' : "pheobe@gjak.com"
@@ -36,7 +36,7 @@
   * Return user's total number to tickets
   
 # 
-* Get active and upcomming events 
+* Get active and upcomming events (GET request)
    * use "/api/user/events"
    * Returns list of active events and upcomming events
    * Say today's date is currDate, active date of event is activeDate and close date of event is closeDate
@@ -44,7 +44,7 @@
      * Upcomming Events: if (currDate < activeDate)
      
 # 
-* Participate in an event
+* Participate in an event (POST request)
    * use '/api/user/participate'
    * Takes two parameters in body
      * Email of that user: 'email' : "pheobe@gjak.com"
@@ -59,11 +59,11 @@
    * And, at last the ticket count of user will be reduced by one
    
 # 
-* Show last week's events and their winners
+* Show last week's events and their winners (GET request)
   * use '/api/user/winners'
   * Returns a list of events of last week and their winners
 # 
-* Announce winner
+* Announce winner (GET request)
   * use '/api/user/announce'
   * This API can be called everyday at 8am and for all the events which ended a day before calling the API, winners will be announced
   * The algorithm picks a random participant and assigns him/her the winner of that event
