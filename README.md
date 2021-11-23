@@ -17,7 +17,7 @@
 * Buy event tickets
   * use "/api/user/buyTickets
   * Require 2 parameter in body
-     * 'email' : "pheobe@gmail.com"
+     * 'email' : "pheobe@gjak.com"
      * 'boughtTickets' : 4     //Number of tickets bought by the  user
   * Require 1 paramete in header
      * 'auth-token' : JWT token // to check whether user is logged in or not
@@ -34,8 +34,8 @@
 * Participate in an event
    * use '/api/user/participate'
    * Takes two parameters in body
-    * Email of that user: 'email' : "pheobe@gjak.com"
-    * ID of event in which user want to participate: 'eventId : id'
+     * Email of that user: 'email' : "pheobe@gjak.com"
+     * ID of event in which user want to participate: 'eventId : id'
    * Takes one parameter in header
      * 'auto-token' : JWT token
    * Steps
