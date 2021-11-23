@@ -32,7 +32,7 @@
      * Upcomming Events: if (currDate < activeDate)
  
 * Participate in an event
-   * use '/api/user/participate"
+   * use '/api/user/participate'
    * Takes two parameters in body
     * Email of that user: 'email' : "pheobe@gjak.com"
     * ID of event in which user want to participate: 'eventId : id'
@@ -44,4 +44,15 @@
      * Checks whether user has already participated in that event
    * If all conditions above comes to be true then that event will be added to eventList of user and that user will be added to participantsList of event
    * And, at last the ticket count of user will be reduced by one
+
+* Show last week's events and their winners
+  * use '/api/user/winners'
+  * Returns a list of events of last week and their winners
+
+* Announce winner
+  * use '/api/user/announce'
+  * This API can be called everyday at 8am and for all the events which ended a day before calling the API, winners will be announced
+  * The algorithm picks a random participant and assigns him/her the winner of that event
+  * Calling this API multiple times a day will not cause an error because first it checks whether their exists a winner for that event before running the algorithm
+  * After successfully calculating the winner, the winner will be added to event at database
     
