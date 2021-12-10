@@ -1,4 +1,4 @@
-# Lucky Draw APIs (Grofer's assignment)
+# Lucky Draw APIs
 # Hosted at: https://luckydrawapi.herokuapp.com/
 ## services and tools: nodeJs, ExpressJs; database: mongoDB
 * NodeJs: 16.13.0
